@@ -87,7 +87,10 @@ public class PatientRecordController {
         return ResponseEntity.ok(ids);
     }
 
-
+    @GetMapping("/report/{format}")
+    public String generateReport(@PathVariable String format) throws FileNotFoundException, JRException {
+        return service.exportReport(format);
+    }
 
 
 }
