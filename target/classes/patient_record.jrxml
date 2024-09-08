@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="patient_record" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="df013db5-f76e-44d3-b0df-bcbc46d93160">
+    <property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="patientRecord"/>
+    <style name="Title" fontName="Times New Roman" fontSize="50" isBold="true"/>
+    <style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
+    <style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+    <style name="Detail" fontName="Arial" fontSize="12"/>
+    <style name="Row" mode="Transparent">
+        <conditionalStyle>
+            <conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+            <style backcolor="#E6DAC3"/>
+        </conditionalStyle>
+    </style>
+    <queryString language="SQL">
+        <![CDATA[select * from patientrecords]]>
+    </queryString>
+    <field name="id" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="id"/>
+        <property name="com.jaspersoft.studio.field.label" value="id"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patientrecords"/>
+    </field>
+    <field name="name" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="name"/>
+        <property name="com.jaspersoft.studio.field.label" value="name"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patientrecords"/>
+    </field>
+    <field name="email" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="email"/>
+        <property name="com.jaspersoft.studio.field.label" value="email"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patientrecords"/>
+    </field>
+    <field name="age" class="java.lang.Integer">
+        <property name="com.jaspersoft.studio.field.name" value="age"/>
+        <property name="com.jaspersoft.studio.field.label" value="age"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patientrecords"/>
+    </field>
+    <field name="gender" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="gender"/>
+        <property name="com.jaspersoft.studio.field.label" value="gender"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patientrecords"/>
+    </field>
+    <field name="bloodType" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="bloodType"/>
+        <property name="com.jaspersoft.studio.field.label" value="bloodType"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patientrecords"/>
+    </field>
+    <field name="medicalCondition" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="medicalCondition"/>
+        <property name="com.jaspersoft.studio.field.label" value="medicalCondition"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patientrecords"/>
+    </field>
+    <field name="dateOfAdmission" class="java.time.LocalDate">
+        <property name="com.jaspersoft.studio.field.name" value="dateOfAdmission"/>
+        <property name="com.jaspersoft.studio.field.label" value="dateOfAdmission"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patientrecords"/>
+    </field>
+    <field name="doctor" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="doctor"/>
+        <property name="com.jaspersoft.studio.field.label" value="doctor"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patientrecords"/>
+    </field>
+    <field name="hospital" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="hospital"/>
+        <property name="com.jaspersoft.studio.field.label" value="hospital"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patientrecords"/>
+    </field>
+    <field name="insuranceProvider" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="insuranceProvider"/>
+        <property name="com.jaspersoft.studio.field.label" value="insuranceProvider"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patientrecords"/>
+    </field>
+    <field name="billingAmount" class="java.lang.Double">
+        <property name="com.jaspersoft.studio.field.name" value="billingAmount"/>
+        <property name="com.jaspersoft.studio.field.label" value="billingAmount"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patientrecords"/>
+    </field>
+    <field name="roomNumber" class="java.lang.Integer">
+        <property name="com.jaspersoft.studio.field.name" value="roomNumber"/>
+        <property name="com.jaspersoft.studio.field.label" value="roomNumber"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patientrecords"/>
+    </field>
+    <field name="admissionType" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="admissionType"/>
+        <property name="com.jaspersoft.studio.field.label" value="admissionType"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patientrecords"/>
+    </field>
+    <field name="dischargeDate" class="java.time.LocalDate">
+        <property name="com.jaspersoft.studio.field.name" value="dischargeDate"/>
+        <property name="com.jaspersoft.studio.field.label" value="dischargeDate"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patientrecords"/>
+    </field>
+    <field name="medication" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="medication"/>
+        <property name="com.jaspersoft.studio.field.label" value="medication"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patientrecords"/>
+    </field>
+    <field name="testResults" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="testResults"/>
+        <property name="com.jaspersoft.studio.field.label" value="testResults"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patientrecords"/>
+    </field>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="136" splitType="Stretch">
+            <staticText>
+                <reportElement style="Title" x="270" y="0" width="263" height="62" uuid="bc1ce1da-8232-46ea-be55-cec4abb986dd"/>
+                <textElement verticalAlignment="Middle">
+                    <font size="40"/>
+                </textElement>
+                <text><![CDATA[Patient Record]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="SubTitle" x="303" y="62" width="196" height="22" uuid="f6a78448-8260-4445-a9e0-e3fb53b080d9"/>
+                <textElement>
+                    <font fontName="Times New Roman"/>
+                </textElement>
+                <text><![CDATA[APIS for patient record]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="172" y="94" width="383" height="42" uuid="8240065e-64b6-4170-b5d9-6341598e7b35"/>
+                <textElement textAlignment="Center">
+                    <font fontName="Times New Roman" size="20"/>
+                </textElement>
+                <text><![CDATA[It's a Demo Jasper Report]]></text>
+            </staticText>
+        </band>
+    </title>
+    <pageHeader>
+        <band splitType="Stretch"/>
+    </pageHeader>
+    <columnHeader>
+        <band height="16" splitType="Stretch">
+            <line>
+                <reportElement positionType="FixRelativeToBottom" x="0" y="15" width="802" height="1" uuid="e9d2002a-c8ee-4649-a258-640dad29110c"/>
+                <graphicElement>
+                    <pen lineWidth="0.5" lineColor="#999999"/>
+                </graphicElement>
+            </line>
+            <staticText>
+                <reportElement style="Column header" x="0" y="0" width="47" height="15" forecolor="#736343" uuid="e7595c70-9587-46ca-aa73-62ccc1128d36">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a7203824-3eac-44cb-aa57-c72a4b57775e"/>
+                </reportElement>
+                <text><![CDATA[id]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Column header" x="47" y="0" width="47" height="15" forecolor="#736343" uuid="1ae4d22b-55a1-4e46-bf17-053a1e1ea0ad">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="977f2bee-a367-4313-b0ca-815c30f5b0dd"/>
+                </reportElement>
+                <text><![CDATA[name]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Column header" x="94" y="0" width="47" height="15" forecolor="#736343" uuid="3d0db3da-f064-4cf3-b780-8a5f2ce44a93">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a70f1c40-d43a-4698-a020-863412dea12a"/>
+                </reportElement>
+                <text><![CDATA[email]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Column header" x="141" y="0" width="47" height="15" forecolor="#736343" uuid="392262dd-81b7-4e95-a9b5-1be3a49afbfa">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5ce4a26f-13e0-4031-9500-c659d4a98ca5"/>
+                </reportElement>
+                <text><![CDATA[age]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Column header" x="188" y="0" width="47" height="15" forecolor="#736343" uuid="4fa02071-90d5-4dc4-addb-5f4a4d46ebf4">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="69e886a1-d322-449e-bffc-4743e4cc065a"/>
+                </reportElement>
+                <text><![CDATA[gender]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Column header" x="235" y="0" width="47" height="15" forecolor="#736343" uuid="dab6a698-b5db-401f-8b0d-e4846fae0b10">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="51249191-eef6-4d81-957d-030640afd390"/>
+                </reportElement>
+                <text><![CDATA[bloodType]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Column header" x="282" y="0" width="47" height="15" forecolor="#736343" uuid="f51e44b6-4e61-4f74-8195-290b6def03f1">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fbe7ab2f-7abe-40a4-8037-67a7b3b5ea2b"/>
+                </reportElement>
+                <text><![CDATA[medicalCondition]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Column header" x="329" y="0" width="47" height="15" forecolor="#736343" uuid="d47633fe-1b99-4182-9144-19d2f4385143">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4e8db66c-6beb-4cd7-a53b-4ea6bdaa2987"/>
+                </reportElement>
+                <text><![CDATA[dateOfAdmission]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Column header" x="376" y="0" width="47" height="15" forecolor="#736343" uuid="5914d26f-a08c-4a27-a0c0-07791582da53">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0674cd1c-0768-49c8-978f-d5387b0204b3"/>
+                </reportElement>
+                <text><![CDATA[doctor]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Column header" x="423" y="0" width="47" height="15" forecolor="#736343" uuid="ce294740-e791-4301-a262-ad2ed1a77d9b">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f42ab4e8-a3cf-4fe8-91d8-bb48d08313d4"/>
+                </reportElement>
+                <text><![CDATA[hospital]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Column header" x="470" y="0" width="47" height="15" forecolor="#736343" uuid="8546b202-6b68-4b9b-9620-c6df77bc46b0">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="64512db0-5bdb-4edb-a679-65d310ab38c3"/>
+                </reportElement>
+                <text><![CDATA[insuranceProvider]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Column header" x="517" y="0" width="47" height="15" forecolor="#736343" uuid="8bb68d57-562f-403e-b9fa-9e8f9b88afcd">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="432c5c8d-0f97-4018-9901-fd6d66a2234e"/>
+                </reportElement>
+                <text><![CDATA[billingAmount]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Column header" x="564" y="0" width="47" height="15" forecolor="#736343" uuid="5a2316d9-8f37-4907-b3fc-94daec547839">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a5cacf04-b5b0-4a38-8a94-2dafd46b3f14"/>
+                </reportElement>
+                <text><![CDATA[roomNumber]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Column header" x="611" y="0" width="47" height="15" forecolor="#736343" uuid="9516eba1-1c5d-4ddb-bba2-7272722d736f">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a8233cf-ef40-4c44-9478-aca12b05c430"/>
+                </reportElement>
+                <text><![CDATA[admissionType]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Column header" x="658" y="0" width="47" height="15" forecolor="#736343" uuid="282b3946-01ef-4000-9b73-15e2b4e8b635">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fc61bfaf-b411-4cd3-bee9-1df16110b93c"/>
+                </reportElement>
+                <text><![CDATA[dischargeDate]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Column header" x="705" y="0" width="47" height="15" forecolor="#736343" uuid="dec9d5ed-63a0-4415-ad4b-a53d6b21ef19">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="41396a1b-bc6d-438c-a6c1-5c7ca61cf52e"/>
+                </reportElement>
+                <text><![CDATA[medication]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Column header" x="752" y="0" width="47" height="15" forecolor="#736343" uuid="bd7b19b8-9874-4715-af0c-b731f3746588">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="77f9350a-586e-426f-bdb0-e648ab432a11"/>
+                </reportElement>
+                <text><![CDATA[testResults]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="15" splitType="Stretch">
+            <frame>
+                <reportElement style="Row" mode="Opaque" x="0" y="0" width="802" height="15" uuid="fa7cec56-4ec1-48e6-a26e-7266a995d174"/>
+                <textField textAdjust="StretchHeight">
+                    <reportElement style="Detail" x="0" y="0" width="47" height="15" uuid="06381885-34ad-4099-a2f6-a142b07bb5e0">
+                        <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a7203824-3eac-44cb-aa57-c72a4b57775e"/>
+                    </reportElement>
+                    <textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+                </textField>
+                <textField textAdjust="StretchHeight">
+                    <reportElement style="Detail" x="47" y="0" width="47" height="15" uuid="84aa85f9-f79f-47d2-b782-9ae50b258f85">
+                        <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="977f2bee-a367-4313-b0ca-815c30f5b0dd"/>
+                    </reportElement>
+                    <textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+                </textField>
+                <textField textAdjust="StretchHeight">
+                    <reportElement style="Detail" x="94" y="0" width="47" height="15" uuid="c29f5062-c249-4daf-b726-9461b674a77e">
+                        <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a70f1c40-d43a-4698-a020-863412dea12a"/>
+                    </reportElement>
+                    <textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+                </textField>
+                <textField textAdjust="StretchHeight">
+                    <reportElement style="Detail" x="141" y="0" width="47" height="15" uuid="deea9164-c9f5-497a-af2a-e35aa53de69a">
+                        <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5ce4a26f-13e0-4031-9500-c659d4a98ca5"/>
+                    </reportElement>
+                    <textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+                </textField>
+                <textField textAdjust="StretchHeight">
+                    <reportElement style="Detail" x="188" y="0" width="47" height="15" uuid="9a5e1d14-d9c5-4a96-9ce9-3dc06eebc3fa">
+                        <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="69e886a1-d322-449e-bffc-4743e4cc065a"/>
+                    </reportElement>
+                    <textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+                </textField>
+                <textField textAdjust="StretchHeight">
+                    <reportElement style="Detail" x="235" y="0" width="47" height="15" uuid="0ede835a-6809-4e88-a3c3-310e3ea84f3c">
+                        <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="51249191-eef6-4d81-957d-030640afd390"/>
+                    </reportElement>
+                    <textFieldExpression><![CDATA[$F{bloodType}]]></textFieldExpression>
+                </textField>
+                <textField textAdjust="StretchHeight">
+                    <reportElement style="Detail" x="282" y="0" width="47" height="15" uuid="5c214a91-6a24-46e4-b033-7bbf62d1deb9">
+                        <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fbe7ab2f-7abe-40a4-8037-67a7b3b5ea2b"/>
+                    </reportElement>
+                    <textFieldExpression><![CDATA[$F{medicalCondition}]]></textFieldExpression>
+                </textField>
+                <textField textAdjust="StretchHeight">
+                    <reportElement style="Detail" x="329" y="0" width="47" height="15" uuid="53c15dd5-34c1-488a-ae88-6fd3b66250bf">
+                        <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4e8db66c-6beb-4cd7-a53b-4ea6bdaa2987"/>
+                    </reportElement>
+                    <textFieldExpression><![CDATA[$F{dateOfAdmission}]]></textFieldExpression>
+                </textField>
+                <textField textAdjust="StretchHeight">
+                    <reportElement style="Detail" x="376" y="0" width="47" height="15" uuid="8dc569b1-fe3c-40c8-9a47-c635ee43ced7">
+                        <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0674cd1c-0768-49c8-978f-d5387b0204b3"/>
+                    </reportElement>
+                    <textFieldExpression><![CDATA[$F{doctor}]]></textFieldExpression>
+                </textField>
+                <textField textAdjust="StretchHeight">
+                    <reportElement style="Detail" x="423" y="0" width="47" height="15" uuid="b5ed1561-dd67-4f4d-a86a-1d9b485a828a">
+                        <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f42ab4e8-a3cf-4fe8-91d8-bb48d08313d4"/>
+                    </reportElement>
+                    <textFieldExpression><![CDATA[$F{hospital}]]></textFieldExpression>
+                </textField>
+                <textField textAdjust="StretchHeight">
+                    <reportElement style="Detail" x="470" y="0" width="47" height="15" uuid="322c9609-8909-43b3-988c-fa31cc966fbc">
+                        <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="64512db0-5bdb-4edb-a679-65d310ab38c3"/>
+                    </reportElement>
+                    <textFieldExpression><![CDATA[$F{insuranceProvider}]]></textFieldExpression>
+                </textField>
+                <textField textAdjust="StretchHeight">
+                    <reportElement style="Detail" x="517" y="0" width="47" height="15" uuid="d80f4073-92f3-41e8-82ad-6588f37dc0dc">
+                        <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="432c5c8d-0f97-4018-9901-fd6d66a2234e"/>
+                    </reportElement>
+                    <textFieldExpression><![CDATA[$F{billingAmount}]]></textFieldExpression>
+                </textField>
+                <textField textAdjust="StretchHeight">
+                    <reportElement style="Detail" x="564" y="0" width="47" height="15" uuid="cd851240-27b5-43fc-847e-f6fac77e4bd9">
+                        <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a5cacf04-b5b0-4a38-8a94-2dafd46b3f14"/>
+                    </reportElement>
+                    <textFieldExpression><![CDATA[$F{roomNumber}]]></textFieldExpression>
+                </textField>
+                <textField textAdjust="StretchHeight">
+                    <reportElement style="Detail" x="611" y="0" width="47" height="15" uuid="e6e31776-0741-4be3-a57f-919dbe3a72b4">
+                        <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6a8233cf-ef40-4c44-9478-aca12b05c430"/>
+                    </reportElement>
+                    <textFieldExpression><![CDATA[$F{admissionType}]]></textFieldExpression>
+                </textField>
+                <textField textAdjust="StretchHeight">
+                    <reportElement style="Detail" x="658" y="0" width="47" height="15" uuid="0bbeea95-838c-43d2-8351-88453dd7057e">
+                        <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fc61bfaf-b411-4cd3-bee9-1df16110b93c"/>
+                    </reportElement>
+                    <textFieldExpression><![CDATA[$F{dischargeDate}]]></textFieldExpression>
+                </textField>
+                <textField textAdjust="StretchHeight">
+                    <reportElement style="Detail" x="705" y="0" width="47" height="15" uuid="69995a38-423c-4ed5-abaa-9a082d61b1cb">
+                        <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="41396a1b-bc6d-438c-a6c1-5c7ca61cf52e"/>
+                    </reportElement>
+                    <textFieldExpression><![CDATA[$F{medication}]]></textFieldExpression>
+                </textField>
+                <textField textAdjust="StretchHeight">
+                    <reportElement style="Detail" x="752" y="0" width="47" height="15" uuid="a48e632c-d2c2-44d5-ad17-07a6d3b7497b">
+                        <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="77f9350a-586e-426f-bdb0-e648ab432a11"/>
+                    </reportElement>
+                    <textFieldExpression><![CDATA[$F{testResults}]]></textFieldExpression>
+                </textField>
+            </frame>
+        </band>
+    </detail>
+    <columnFooter>
+        <band height="6" splitType="Stretch">
+            <line>
+                <reportElement positionType="FixRelativeToBottom" x="0" y="3" width="802" height="1" uuid="fa5e88d5-a011-4e32-8f12-ce923f903111"/>
+                <graphicElement>
+                    <pen lineWidth="0.5" lineColor="#999999"/>
+                </graphicElement>
+            </line>
+        </band>
+    </columnFooter>
+    <pageFooter>
+        <band height="25" splitType="Stretch">
+            <frame>
+                <reportElement mode="Opaque" x="-21" y="1" width="843" height="24" forecolor="#D0B48E" backcolor="#F2EBDF" uuid="5d8169bd-4a75-48c8-8a68-6d3ad5ba9402"/>
+                <textField evaluationTime="Report">
+                    <reportElement style="Column header" x="783" y="1" width="40" height="20" forecolor="#736343" uuid="e5e27efa-b599-499b-9ca3-848cb511cb7b"/>
+                    <textElement verticalAlignment="Middle">
+                        <font size="10" isBold="false"/>
+                    </textElement>
+                    <textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+                </textField>
+                <textField>
+                    <reportElement style="Column header" x="703" y="1" width="80" height="20" forecolor="#736343" uuid="18cfe1ca-f7d6-48b0-9827-28578b42a5e0"/>
+                    <textElement textAlignment="Right" verticalAlignment="Middle">
+                        <font size="10" isBold="false"/>
+                    </textElement>
+                    <textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+                </textField>
+                <textField pattern="EEEEE dd MMMMM yyyy">
+                    <reportElement style="Column header" x="22" y="1" width="197" height="20" forecolor="#736343" uuid="fbce24bb-3cb1-44a3-8eec-8c067ddbe5b5"/>
+                    <textElement verticalAlignment="Middle">
+                        <font size="10" isBold="false"/>
+                    </textElement>
+                    <textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+                </textField>
+            </frame>
+        </band>
+    </pageFooter>
+    <summary>
+        <band splitType="Stretch"/>
+    </summary>
+</jasperReport>
